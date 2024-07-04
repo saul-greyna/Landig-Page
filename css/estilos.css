@@ -1,38 +1,36 @@
-*{
+/* General styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 12px;
-    font-family: ;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-body{
+body {
     font-size: 0px;
+    background-color: #000;
+    overflow-x: hidden;
 }
 
-#inicio{
-    height: 100vh;
-    background: url(../images/Fondo2.jpg) no-repeat ;
-    background-size: cover;
-}
-
-#titulos{
+#titulos {
     text-align: center;
-    padding: 30vh 100px;
+    padding: 7vh 100px;
     color: white;
+
 }
 
-#producto{
+#producto {
     position: absolute;
     left: 100px;
     top: 25%;
     width: 41%;
 }
 
-#ingreso{
+#ingreso {
     width: 40%;
     margin: 7px;
     font-size: 2rem;
@@ -41,11 +39,11 @@ body{
     padding: 25px 15px;
     border-color: #000;
     height: 50%;
-    border: 1px solid ;
+    border: 1px solid;
     box-shadow: 0px 6px 129px rgb(142, 241, 180);
 }
 
-input{
+input {
     height: 70px;
     width: 550px;
     background-color: rgb(255, 255, 255);
@@ -55,16 +53,16 @@ input{
     text-align: center;
 }
 
-input:hover{
+input:hover {
     background-color: rgb(84, 233, 84);
     color: #fff;
     box-shadow: #fff;
 }
 
-h3{
+h3 {
     color: white;
     font-size: 4rem;
-    text-shadow: #000000 7px 7px 7px ;
+    text-shadow: #000000 7px 7px 7px;
 }
 
 .Logo {
@@ -74,4 +72,113 @@ h3{
     left: 2%;
     top: 2%;
     margin: 0 0 0 -25px;
+}
+
+aside {
+    font-size: 2rem;
+    position: top ;
+}
+
+#tenis {
+    position: absolute;
+    height: 500px;
+    width: 690px;
+    left: 100px;
+    margin-top: 1200px;
+    flex: 2;
+    min-width: 350px;
+}
+
+.img-fluid {
+    position: absolute;
+    top: 50px; /* Ajustar posicion del logo */
+    left: 100px;
+}
+
+#texto {
+    margin-top: 150px;
+    text-shadow: yellowgreen 7px 7px 7px;
+}
+
+
+
+/* Responsive styles for mobile */
+@media (max-width: 800px) {
+    #titulos {
+        padding: 10vh 20px;
+    }
+
+    #ingreso {
+        width: 90%;
+        padding: 20px;
+        margin: 10px auto;
+        top: 450px;
+        position: absolute;
+    }
+
+    input {
+        width: calc(100% - 20px);
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    #tenis {
+        position: absolute;
+        left: 10px;
+        height: 200px;
+        width: 165px;
+        bottom: 250px;
+    }
+
+    .img-fluid {
+        position: relative;
+        top: 20px;
+        left: auto;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    #texto {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+}
+
+.text-secondary.text-center.text-warning.display-1 {
+    display: none;
+}
+
+
+footer {
+    position: absolute;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    top: 800px;
+    width: 100%;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-size: 1rem;
+    margin-top: 10px;
 }
